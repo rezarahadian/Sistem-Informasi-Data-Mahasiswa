@@ -1,0 +1,373 @@
+/* Mengatur gaya dasar untuk keseluruhan halaman */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: gainsboro;
+    padding-top: 80px; /* Menambahkan padding untuk konten agar tidak tertutup header */
+}
+
+/* Mengatur gaya untuk kontainer header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #061834;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+/* Area Kiri: Logo dan Nama Politeknik TEDC */
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.logo-area h1 {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/* Area Kanan: Navigasi */
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-left: 20px;
+    font-family: 'Poppins';
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Mengatur gambar agar lebih fleksibel pada layar kecil */
+.tedc-img {
+    width: 100%; /* Berubah menjadi 100% pada layar kecil */
+    max-width: 500px; /* Tetap pada ukuran maksimal */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Mengatur ukuran teks kolom agar responsif */
+.kolom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 100%; /* Ambil 100% lebar layar kecil */
+    max-width: 600px;
+}
+
+/* Menyesuaikan ukuran heading pada layar kecil */
+.kolom h2 {
+    font-weight: 800;
+    font-size: 35px; /* Ukuran lebih kecil untuk tampilan kecil */
+    margin: 10px 0;
+    background: linear-gradient(90deg, #061834, #4a90e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Arial, sans-serif;
+}
+
+
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+/* Style untuk kolom utama */
+.kolom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style untuk heading dengan gradasi warna */
+.kolom h2 {
+    font-weight: 800;
+    font-size: 45px;
+    margin: 10px 0;
+    background: linear-gradient(90deg, #061834, #4a90e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0; /* Menambahkan padding atas dan bawah */
+}
+
+.logo1-img {
+    width: 200px; /* Sesuaikan ukuran gambar */
+    height: auto;
+}
+
+.judulprofil {
+    font-size: 25px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #061834, #4a90e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    text-align: center;
+    padding-top: 100px;
+    
+}
+
+/* Visi dan Misi Container */
+.visi-misi-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Mengatur jarak antara visi dan misi */
+    width: 100%; /* Mengatur lebar kontainer */
+    color: #061834;
+}
+
+.visi, .misi {
+    flex: 1; /* Mengatur flex untuk membagi ruang */
+    padding: 20px; /* Menambahkan padding */
+    border-radius: 10px; /* Sudut yang melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    margin: 0 10px; /* Menambahkan margin di sisi */
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;/* Rata kanan kiri */
+}
+
+.img-container {
+    flex: 0 0 200px; /* Lebar tetap untuk gambar */
+    text-align: center; /* Mengatur gambar di tengah */
+}
+.sejarah {
+    color: #061834;
+    flex: 1; /* Mengatur flex untuk membagi ruang */
+    padding: 20px; /* Menambahkan padding */
+    border-radius: 10px; /* Sudut yang melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    margin: 10px; /* Menambahkan margin di sisi */
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;/* Rata kanan kiri */
+   
+}
+.sejarah h4{
+    font-size: 20px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #061834, #4a90e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    text-align: center;
+}
+.visi h4{
+    font-size: 20px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #061834, #4a90e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    text-align: center;
+}
+.misi h4{
+    font-size: 20px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #061834, #4a90e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    text-align: center;
+}
+/* Mengatur bagian utama */
+.jurusan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Sudut yang melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    margin: 20px; /* Menambahkan margin di sisi */
+  
+    
+}
+
+/* Mengatur posisi judul agar di tengah */
+.jurusan h4 {
+    font-size: 20px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #061834, #4a90e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    text-align: center;
+    font-family: 'Times New Roman';
+  
+}
+
+/* Mengatur konten kolom agar dalam satu baris */
+.row1{
+    display: block;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    text-align: justify;/* Rata kanan kiri */
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #061834;
+}
+.programstudi {
+    width: 100%; /* Memastikan elemen kontainer mengambil seluruh lebar */
+    padding: 20px; /* Memberikan padding untuk estetika */
+}
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px; /* Sudut yang melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    margin: 18px; /* Menambahkan margin di sisi */
+    background-color: #061834;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-area, .navigation {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+    }
+
+    .navigation li {
+        margin: 10px 0;
+    }
+
+    .tedc-img {
+        width: 100%;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .kolom h2 {
+        font-size: 35px;
+    }
+
+    .visi-misi-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sejarah, .visi, .misi {
+        margin: 10px 0;
+    }
+
+    .jurusan {
+        width: 100%;
+    }
+
+    .row1 {
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kolom h2 {
+        font-size: 28px;
+    }
+
+    .logo-area h1 {
+        font-size: 20px;
+    }
+
+    .navigation a {
+        font-size: 16px;
+    }
+
+    .jurusan h4, .judulprofil {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .social-media a {
+        font-size: 14px;
+    }
+}
